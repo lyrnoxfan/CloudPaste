@@ -22,7 +22,7 @@ jobs:
       should_deploy: ${{ steps.check.outputs.should_deploy }}
     steps:
       - name: 📥 检出代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: 🔍 检查部署配置
         id: check
@@ -63,10 +63,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "20"
           cache: "npm"
